@@ -145,3 +145,63 @@
 // console.log(arr7);
 // arr7[0] = 100000;
 // console.log(arr4);
+
+// /**
+//  * mapやfilterを使った配列の処理
+//  */
+
+//  const nameArr1 = ["田中", "山田", "じゃけぇ"];
+//  for (let index = 0; index < nameArr1.length; index++) {
+//    console.log(nameArr1[index]);
+//  }
+
+//  const nameArr2 = nameArr1.map((name) => {
+//    if (name === "じゃけぇ") {
+//       return name
+//    }　else {
+//       return `${name}さん`
+//    }
+//  })
+
+//  console.log(nameArr2);
+
+//  nameArr1.map((name, index) => console.log(`${index}番目は${name}`));
+
+// // filter
+// const nameArr3 = [1, 2, 3, 4, 5];
+// const nameArr4 = nameArr3.filter((num) => {
+//   return num % 2 === 1;
+// });
+// console.log(nameArr4);
+
+// /**
+//  * 三項演算子
+//  */
+
+//  const num = "1300";
+
+//  console.log(num.toLocaleString());
+
+//  const formattedNum = typeof num === 'number' ? num.toLocaleString() : '数値を入力してください';
+//  console.log(formattedNum);
+
+//  const checkSum = (num1, num2) => {
+//    return num1 + num2 < 100 ? '100いないです！' : `${num1 + num2 - 100}超えています！`;
+//  }
+//  console.log(checkSum(22, 202));
+
+// /**
+//  * 論理演算子の本当の意味
+//  */
+
+//  const num = 100;
+
+// //  || は左側がfalseなら右側を返す
+//  const fee = num || "金額未設定";
+
+//  console.log(fee);
+
+// //  && は右側がtrueなら左側を返す
+//  const fee2 = num && "なにか設定されています";
+
+//  console.log(fee2);
